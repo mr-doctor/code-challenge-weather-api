@@ -1,0 +1,8 @@
+<web-app>
+	<display-name>java weather api challenge</display-name>
+
+	<listener>
+		<listener-class>nz.co.solnet.BootstrapConfig</listener-class>
+	</listener>
+
+</web-app>
