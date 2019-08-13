@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title> First HTML PAGE </title>
+</head>
+<body>
+<p>Let's test adding.</p>
+<form method="POST" action="weather">
+<div>
+    City Name
+    <input name="city" type="text"/>
+</div>
+<div>
+    Date (YYYY-MM-DD)
+    <input name="date" type="text"/>
+</div>
+Temperature
+<input name="temperature" type="number"/>
+<div>
+    Wind
+    <input name="wind" type="number"/>
+</div>
+<div>
+    Rain
+    <input name="rain" type="number"/>
+</div>
+<input type="submit" value="Submit"/>
+</form>
+<p>Let's test deletion.</p>
+<form method="GET" action="delete">
+    <div>
+        ID
+        <input name="id" type="number"/>
+    </div>
+    <input type="submit" value="Delete"/>
+</form>
+<p>Let's test updating.</p>
+<form method="POST" action="update">
+    <div>
+        ID
+        <input name="id" type="text"/>
+    </div>
+    <div>
+        City Name
+        <input name="city" type="text"/>
+    </div>
+    <div>
+        Date (YYYY-MM-DD)
+        <input name="date" type="text"/>
+    </div>
+    Temperature
+    <input name="temperature" type="number"/>
+    <div>
+        Wind
+        <input name="wind" type="number"/>
+    </div>
+    <div>
+        Rain
+        <input name="rain" type="number"/>
+    </div>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

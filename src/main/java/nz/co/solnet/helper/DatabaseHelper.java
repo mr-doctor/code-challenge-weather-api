@@ -1,11 +1,6 @@
 package nz.co.solnet.helper;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +12,7 @@ public class DatabaseHelper {
 
 	}
 
-	private static final String DATABASE_URL = "jdbc:derby:weatherdb;create=true";
+	public static final String DATABASE_URL = "jdbc:derby:weatherdb;create=true";
 	private static final Logger logger = LogManager.getLogger(DatabaseHelper.class);
 
 	/**
@@ -60,6 +55,13 @@ public class DatabaseHelper {
 				logger.info("Table already exists");
 			}
 		}
+
+//
+//		PreparedStatement s = conn.prepareStatement("INSERT INTO cities_weather VALUES (DEFAULT, ?, ...;");
+//		s.setString(1, "Poop");
+//		s.execute();
+
+
 	}
 
 	/**
