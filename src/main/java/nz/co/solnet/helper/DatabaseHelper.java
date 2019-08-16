@@ -56,11 +56,6 @@ public class DatabaseHelper {
 			}
 		}
 
-//
-//		PreparedStatement s = conn.prepareStatement("INSERT INTO cities_weather VALUES (DEFAULT, ?, ...;");
-//		s.setString(1, "Poop");
-//		s.execute();
-
 
 	}
 

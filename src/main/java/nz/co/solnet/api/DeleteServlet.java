@@ -14,6 +14,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import static nz.co.solnet.api.Util.*;
 import static nz.co.solnet.helper.DatabaseHelper.DATABASE_URL;
 
 @WebServlet(name = "DeleteServlet", urlPatterns = "/delete")
@@ -22,12 +23,15 @@ public class DeleteServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		if (!IDValid(req, resp)) {
+			return;
+		}
 		try (Connection conn = DriverManager.getConnection(DATABASE_URL)) {
 
 			PreparedStatement p = conn.prepareStatement("DELETE FROM cities_weather WHERE id=?");
-			p.setInt(1, Integer.parseInt(req.getParameter("id")));
+			p.setInt(1, Integer.parseInt(req.getParameter(ID_STR)));
 			p.execute();
-			logger.info("Deleted item with id=" + req.getParameter("id"));
+			logger.info("Deleted item with id=" + req.getParameter(ID_STR));
 
 		} catch (SQLException e) {
 			logger.error("Error in initialising connection", e);

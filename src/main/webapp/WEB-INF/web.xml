@@ -1,23 +1,8 @@
-<!--<web-app>-->
-<!--	<display-name>java weather api challenge</display-name>-->
-
-<!--	<listener>-->
-<!--		<listener-class>nz.co.solnet.BootstrapConfig</listener-class>-->
-<!--	</listener>-->
-<!--	<servlet>-->
-<!--		<servlet-name>uppercaseServlet</servlet-name>-->
-<!--		<servlet-class>nz.co.solnet.api.API</servlet-class>-->
-<!--	</servlet>-->
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>uppercaseServlet</servlet-name>-->
-<!--		<url-pattern>/uppercase</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--</web-app>-->
 <web-app>
 
 	<servlet>
-		<servlet-name>API</servlet-name>
-		<servlet-class>nz.co.solnet.api.API</servlet-class>
+		<servlet-name>GetServlet</servlet-name>
+		<servlet-class>nz.co.solnet.api.GetServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>DeleteServlet</servlet-name>
@@ -27,10 +12,18 @@
 		<servlet-name>UpdateServlet</servlet-name>
 		<servlet-class>nz.co.solnet.api.UpdateServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>nz.co.solnet.api.PostServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>API</servlet-name>
-		<url-pattern>/weather</url-pattern>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/post</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetServlet</servlet-name>
+		<url-pattern>/get</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>DeleteServlet</servlet-name>
@@ -40,6 +33,5 @@
 		<servlet-name>UpdateServlet</servlet-name>
 		<url-pattern>/update</url-pattern>
 	</servlet-mapping>
-
 
 </web-app>
