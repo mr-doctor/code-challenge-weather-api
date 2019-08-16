@@ -45,7 +45,7 @@ public class PostServlet extends HttpServlet {
 					.add(RAIN_STR, req.getParameter(RAIN_STR))
 					.build().toString();
 
-			logger.info(newCity);
+			logger.info("Added item " + newCity);
 
 		} catch (SQLException e) {
 			logger.error("Error in initialising connection", e);

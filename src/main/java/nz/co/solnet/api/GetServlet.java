@@ -55,12 +55,12 @@ public class GetServlet extends HttpServlet {
 
 		q.next();
 		JsonObject bestCity = buildCityJSON(q);
-		BigDecimal bestTemperature = q.getBigDecimal(RAIN_STR);
+		BigDecimal bestTemperature = q.getBigDecimal(TEMPERATURE_STR);
 
 		while (q.next()) {
 
 			JsonObject newCity = buildCityJSON(q);
-			BigDecimal newTemperature = q.getBigDecimal(RAIN_STR);
+			BigDecimal newTemperature = q.getBigDecimal(TEMPERATURE_STR);
 
 			if (extremeRecord.equals("coldest")) {
 				if (newTemperature.compareTo(bestTemperature) < 0) {
@@ -74,6 +74,7 @@ public class GetServlet extends HttpServlet {
 				}
 			}
 		}
+		logger.info("Found " + extremeRecord + " item: " + bestCity.toString());
 		resp.getWriter().write(bestCity.toString());
 	}
 
@@ -94,10 +95,10 @@ public class GetServlet extends HttpServlet {
 		JsonObjectBuilder jsonBuilder = Json.createObjectBuilder();
 		while (q.next()) {
 			JsonObject j = buildCityJSON(q);
-			logger.info(j);
+			logger.info("Got item " + j);
 			jsonBuilder.add(q.getString(ID_STR), j);
 		}
-
+		logger.info("Got all items");
 		resp.getWriter().write(jsonBuilder.build().toString());
 	}
 
@@ -125,6 +126,7 @@ public class GetServlet extends HttpServlet {
 
 
 		JsonObject json = buildCityJSON(q);
+		logger.info("Got item " + json);
 		resp.getWriter().write(json.toString());
 	}
 }

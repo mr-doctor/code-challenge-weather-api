@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="820d124f-ff3e-46f8-b7d1-2072fa96d833" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/PostServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -12,14 +10,15 @@
       <change beforePath="$PROJECT_DIR$/java-weather-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-weather-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/BootstrapConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/BootstrapConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/GetServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/GetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/GetServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/PostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/PostServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/UpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/UpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/api/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/solnet/helper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/solnet/helper/DatabaseHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page1.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
