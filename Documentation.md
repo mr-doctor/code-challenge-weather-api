@@ -1,5 +1,9 @@
 # Java Coding Challenge - Weather API Documentation
 
+The code for the API is all contained within the `nz.co.solnet.api` package. 
+I did not modify the functionality of any other Java code. I did change the `webapp` code to expose
+API endpoints. 
+
 ## Running the API
 I have not changed the method of running the challenge. 
 Run `mvn jetty:run` in the project base folder, as before.
